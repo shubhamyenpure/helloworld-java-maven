@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.scmgalaxy.mavensample</groupId>
-  <artifactId>yoodle</artifactId>
+  <artifactId>Parasdevops</artifactId>
   <packaging>jar</packaging>
   <version>5.0.0</version>
   <name>my-maven</name>
@@ -40,14 +40,14 @@
   
 <distributionManagement>
     <repository>
-        <id>sym</id>
-        <name>release softx</name>
-        <url>http://52.66.196.78:8081/repository/all/</url>
+        <id>releases</id>
+        <name>releases</name>
+        <url>http://35.238.135.183:8081/repository/all/</url>
     </repository>
     <snapshotRepository>
-        <id>sym</id>
-        <name>snapshot softx</name>
-        <url>http://52.66.196.78:8081/repository/all/</url>
+        <id>snapshots</id>
+        <name>snapshots</name>
+        <url>http://35.238.135.183:8081/repository/all/</url>
     </snapshotRepository>
 </distributionManagement>
 
