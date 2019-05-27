@@ -30,7 +30,7 @@ node {
    }
 	stage('User Confirmation') {
 	
-		input message: "Please confirm that you wish to execute the test in ${params.Environment}  ?\n\n", ok: "Proceed"
+		input message: "Please confirm that you wish to execute the test in ${Environment}  ?\n\n", ok: "Proceed"
 	
 			} 
    stage('Test') {
