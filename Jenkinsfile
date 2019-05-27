@@ -29,12 +29,10 @@ node {
       }
    }
 	stage('User Confirmation') {
-	if (params.Environment.trim().equals('')){
+	
 		input message: "Please confirm that you wish to execute the test in ${params.Environment}  ?\n\n", ok: "Proceed"
-	}else {
-		input message: "Please confirm that you wish to execute the test in ${params.Environment}  ?\n\n", ok: "Proceed"
-	}
-} 
+	
+			} 
    stage('Test') {
       // Run the maven build
       withEnv(["MVN_HOME=$mvnHome"]) {
